@@ -27,13 +27,13 @@ export default async function handler({ params }) {
         name: "Inter",
         data: fontData,
         style: "normal"
+      },
+      {
+        name: "Inter",
+        data: interBoldFont,
+        style: "normal",
+        weight: 700
       }
-      // {
-      //   name: "Inter",
-      //   data: interBoldFont,
-      //   style: "normal",
-      //   weight: 700
-      // }
     ]
   });
 }

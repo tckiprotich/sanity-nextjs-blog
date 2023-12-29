@@ -12,28 +12,28 @@ async function sharedMetaData(params) {
     title: {
       default:
         settings?.title ||
-        "Stablo - Blog Template for Next.js & Sanity CMS",
-      template: "%s | Stablo"
+        "IPHURTS - We Build Digital Solutions",
+      template: "%s | IPHURTS"
     },
     description:
       settings?.description ||
-      "Stablo - popular open-source next.js and sanity blog template",
-    keywords: ["Next.js", "Sanity", "Tailwind CSS"],
-    authors: [{ name: "Surjith" }],
+      "IPHURTS - Our mission is to empower busines  with crafting digital solutions. We build websites, web apps, mobile apps,Apis and more.",
+    keywords: ["Software development", "APIs", "Custom software solution"],
+    authors: [{ name: "Collins Tonui" }],
     canonical: settings?.url,
     openGraph: {
       images: [
         {
           url:
             urlForImage(settings?.openGraphImage)?.src ||
-            "/img/opengraph.jpg",
+            "/img/opengraph.png",
           width: 800,
           height: 600
         }
       ]
     },
     twitter: {
-      title: settings?.title || "Stablo Template",
+      title: settings?.title || "IPHURTS",
       card: "summary_large_image"
     },
     robots: {
@@ -60,4 +60,4 @@ export default async function Layout({ children, params }) {
   );
 }
 // enable revalidate for all pages in this layout
-// export const revalidate = 60;
+export const revalidate = 60;
